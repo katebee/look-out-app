@@ -1,0 +1,35 @@
+.infoCard {
+    border-width: 7px;
+    /*width: 60vw;*/
+    border-style: solid;
+    border-radius: 15px;
+    margin: 5vmin;
+    padding: 3vmin;
+    }
+.infoCard__header{
+	font-size: 4vmin;
+	margin: 4vmin;
+}
+.infoCard__images{
+	/*overflow-x: scroll;*/
+	/*height: 30vmin;*/
+}
+.infoCard__images > img {
+	display:inline;
+}
+.infoCard__image{
+    width: 30vmin;
+    height: 30vmin;
+    display:inline;
+    border-style: solid;
+    border-radius: 15px;
+    border-color:#999;
+}
+.infoCard__products{
+    overflow-x: scroll;
+    white-space:nowrap;
+}
+.infoCard__productImage{
+    display:inline;
+    height: 30vmin;
+}

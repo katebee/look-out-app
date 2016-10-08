@@ -8,7 +8,7 @@ var WILDLIFE = ["foo", "bar", "eep"];
 var rows = [];
 
 for (var i=0; i < WILDLIFE.length; i++) {
-    rows.push(<InfoCard text={WILDLIFE[i]} name={WILDLIFE[i]} />);
+    rows.push(<InfoCard text={WILDLIFE[i]} name={WILDLIFE[i]} conservation_status={"NC"}/>);
 }
 
 export default class Home extends React.Component {

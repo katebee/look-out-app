@@ -44,7 +44,7 @@ for (var item in cam) {
   for (var i = cam[item].items.length - 1; i >= 0; i--) {
     confiscatedItems.push(cam[item].items[i][0]);
   }
-  popular_items = confiscatedItems.join(", ");
+  popular_items = confiscatedItems.join(",  ");
 
   rows.push(<InfoCard popular_items={popular_items} name={item} conservation_status={animalConservationStatus[item]} animal_image={"http://www.eonline.com/eol_images/Entire_Site/2013229/rs_560x415-130329112005-1024.BabyPig1.mh.032913.jpg"} product_image={"http://www.metmuseum.org/-/media/Images/Press/Press%20Images/Exhibitions/2011/Game%20of%20Kings/Teaser_King-front.jpg"} />);
 }

@@ -34,6 +34,9 @@ $mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
 
 @import "mq";
 
+@import "nav";
+@import "countryselect";
+
 body {
     font-family: "Lato", "Georgia", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -45,9 +48,6 @@ body {
 
 h2 {
   margin: 0;
-
-  @include mq(desktop) {
-  }
 }
 
 h1 {
@@ -65,4 +65,12 @@ h1 {
 
 .map-wrapper {
   display: inline;
+}
+
+.main-content__header {
+  color: blue;
+}
+
+.country-select {
+  padding-bottom: 12px;
 }

@@ -8,17 +8,9 @@
     }
 .infoCard__header{
 	font-size: 4vmin;
-	margin: 4vmin;
-}
-.infoCard__images{
-	/*overflow-x: scroll;*/
-	/*height: 30vmin;*/
-}
-.infoCard__images > img {
-	display:inline;
+	margin: 2vmin;
 }
 .infoCard__image{
-    width: 30vmin;
     height: 30vmin;
     display:inline;
     border-style: solid;

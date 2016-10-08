@@ -9,14 +9,8 @@ export default class InfoCard extends React.Component {
         <div className="infoCard__images">
             <img className="infoCard__image"
             src={this.props.animal_image} />
-            <img className="infoCard__productImage"
-            src={'https://s-media-cache-ak0.pinimg.com/736x/44/91/31/449131cabd0f6c51259cf881355368a1.jpg'} />
-            <img className="infoCard__productImage"
-            src={'https://s-media-cache-ak0.pinimg.com/736x/44/91/31/449131cabd0f6c51259cf881355368a1.jpg'} />
-            <img className="infoCard__productImage"
-            src={'https://s-media-cache-ak0.pinimg.com/736x/44/91/31/449131cabd0f6c51259cf881355368a1.jpg'} />
-            <img className="infoCard__productImage"
-            src={'https://s-media-cache-ak0.pinimg.com/736x/44/91/31/449131cabd0f6c51259cf881355368a1.jpg'} />
+            <img className="infoCard__productImage" src={this.props.product_image} />
+            <img className="infoCard__productImage" src={this.props.product_image} />
         </div>
         <div className="infoCard__conservation_status">Conservation Status: <b>{this.props.conservation_status}</b></div>
         <div className="infoCard__text">{this.props.description}</div>

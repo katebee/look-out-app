@@ -1,0 +1,18 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>@title</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("main.css")"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.0.1/dist/leaflet.css" />
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/icons/favicon.png")"/>
+    </head>
+
+    <body>
+        @content
+    </body>
+
+    <script src="https://unpkg.com/leaflet@@1.0.1/dist/leaflet.js"></script>
+</html>

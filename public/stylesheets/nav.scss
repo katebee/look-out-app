@@ -1,0 +1,28 @@
+$brand-background: hsl(0,0%,28%);
+$brand-light-1: hsl(0,0%,75%);
+$brand-feature-1: hsl(188,89%,44%);
+
+.nav {
+  border-top: 4px solid $brand-feature-1;
+  background-color: $brand-background;
+  color: #ffffff;
+  padding: 3rem 0;
+  position: relative;
+  top: -25px;
+}
+
+.header {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-left: 1rem;
+}
+
+.header-highlight {
+  color: $brand-feature-1;
+  padding-left: 1rem;
+}
+
+.links-nav__item {
+
+}

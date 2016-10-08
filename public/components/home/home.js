@@ -29,6 +29,8 @@ var WILDLIFE = [
 ];
 var rows = [];
 
+var wildlifeData = require( "../../data.json" );
+
 for (var i=0; i < WILDLIFE.length; i++) {
   rows.push(<InfoCard description={WILDLIFE[i].description} name={WILDLIFE[i].name} conservation_status={WILDLIFE[i].conservation_status} animal_image={WILDLIFE[i].animal_image} product_image={WILDLIFE[i].product_image} />);
 }

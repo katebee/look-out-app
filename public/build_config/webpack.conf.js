@@ -17,6 +17,9 @@ module.exports = {
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!sass-loader?sourceMap')
       },
       {
+        test: /\.json$/, loader: 'json'
+      },
+      {
           test: /\.(ttf|eot|svg|gif|jp?eg)(\?v=[0-9].[0-9].[0-9])?$/,
           loader: "file-loader?name=[name].[ext]"
       }

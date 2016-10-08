@@ -13,7 +13,7 @@ export default class InfoCard extends React.Component {
             <img className="infoCard__productImage" src={this.props.product_image} />
         </div>
         <div className="infoCard__conservation_status">Conservation Status: <b>{this.props.conservation_status}</b></div>
-        <div className="infoCard__text">{this.props.description}</div>
+        <div className="infoCard__text">Popular items: {this.props.popular_items}</div>
       </div>
     )
   }

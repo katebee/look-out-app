@@ -32,13 +32,10 @@ var rows = [];
 var wildlifeData = require( "../../data.json" );
 var animalConservationStatus = require("../../animals_with_status.json");
 
-console.log(wildlifeData.Cambodia);
   // rows.push(<InfoCard description={WILDLIFE[i].description} name={WILDLIFE[i].name} conservation_status={WILDLIFE[i].conservation_status} animal_image={WILDLIFE[i].animal_image} product_image={WILDLIFE[i].product_image} />);
 
-var cam = wildlifeData.Cambodia;
+var cam = wildlifeData.Namibia;
 for (var item in cam) {
-  console.log(item);
-  console.log(cam[item]);
   var popular_items;
   var confiscatedItems = [];
   for (var i = cam[item].items.length - 1; i >= 0; i--) {

@@ -9,6 +9,9 @@ $brand-feature-1: hsl(188,89%,44%);
   padding: 2rem 0;
   position: relative;
   top: -25px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 }
 
 .header {
@@ -25,4 +28,16 @@ $brand-feature-1: hsl(188,89%,44%);
 
 .links-nav__item {
 
+}
+
+#header-logo {
+  display:inline-block;
+  height: 20vmin;
+}
+.nav h2 {
+  display:inline-block;
+  font-size: 4vmin;
+}
+.nav * {
+  margin: 1vmin;
 }

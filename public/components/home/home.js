@@ -16,9 +16,11 @@ export default class Home extends React.Component {
   render() {
     return(
       <div>
-        <CountrySelect />
-        <h2 className="header-highlight">Home Page Content</h2>
-        <div>
+        <div className="country-select">
+          <h3>Destination:</h3>
+          <CountrySelect />
+        </div>
+        <div className="infoCard-wrapper">
           {rows}
         </div>
       </div>

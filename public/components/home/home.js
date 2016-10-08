@@ -7,6 +7,8 @@ import InfoCard from '../infoCard/infoCard';
 var WILDLIFE = ["foo", "bar", "eep"];
 var rows = [];
 
+var wildlifeData = require( "../../data.json" );
+
 for (var i=0; i < WILDLIFE.length; i++) {
     rows.push(<InfoCard text={WILDLIFE[i]} name={WILDLIFE[i]} conservation_status={"NC"}/>);
 }

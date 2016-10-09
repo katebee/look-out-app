@@ -55,3 +55,13 @@
 .react-autosuggest__suggestion--focused {
   background-color: #ddd;
 }
+
+#country-select-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.country-select * {
+  display:inline-block;
+  margin: 0 1vmin;
+}

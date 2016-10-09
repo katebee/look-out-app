@@ -55,9 +55,11 @@ export default class Home extends React.Component {
   render() {
     return(
       <div>
+      <div id="country-select-wrapper">
         <div className="country-select">
           <h3>Destination:</h3>
           <CountrySelect />
+        </div>
         </div>
         <div className="infoCard-wrapper">
           {rows}

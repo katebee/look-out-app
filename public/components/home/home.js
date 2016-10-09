@@ -64,13 +64,13 @@ export default class Home extends React.Component {
         </div>
         </div>
         <div className="infoCard-wrapper">
-          {Object.keys(this.state.selectedCountryAnimals).map(key =>
+          {this.state.selectedCountryAnimals.map(animal =>
             <InfoCard
-              description={key.description}
-              name={key.name}
-              conservation_status={key.conservation_status}
-              animal_image={key.animal_image}
-              product_image={key.product_image}
+              description={animal.description}
+              name={animal.name}
+              conservation_status={animal.cons}
+              animal_image={'../../assets/ok/' + animal.img}
+              product_image={animal.product_image}
               />
           )}
         </div>

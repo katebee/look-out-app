@@ -27,25 +27,42 @@ var WILDLIFE = [
     product_image:"http://www.metmuseum.org/-/media/Images/Press/Press%20Images/Exhibitions/2011/Game%20of%20Kings/Teaser_King-front.jpg"
   }
 ];
-var rows = [];
+
 
 var wildlifeData = require( "../../data.json" );
 
-for (var i=0; i < WILDLIFE.length; i++) {
-  rows.push(<InfoCard description={WILDLIFE[i].description} name={WILDLIFE[i].name} conservation_status={WILDLIFE[i].conservation_status} animal_image={WILDLIFE[i].animal_image} product_image={WILDLIFE[i].product_image} />);
-}
-
 export default class Home extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      countries: this.extractCountriesFromWildlifeJSON()
+    }
+  }
+
+  extractCountriesFromWildlifeJSON() {
+    return Object.keys(wildlifeData);
+  }
 
   render() {
     return(
       <div>
         <div className="country-select">
           <h3>Destination:</h3>
-          <CountrySelect />
+          <CountrySelect
+            countries={this.state.countries}
+          />
         </div>
         <div className="infoCard-wrapper">
-          {rows}
+          {WILDLIFE.map(organism =>
+            <InfoCard
+              description={organism.description}
+              name={organism.name}
+              conservation_status={organism.conservation_status}
+              animal_image={organism .animal_image}
+              product_image={organism.product_image}
+              />
+          )}
         </div>
       </div>
     )

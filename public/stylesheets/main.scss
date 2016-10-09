@@ -2,6 +2,10 @@
 @import "countryselect";
 @import "infocard";
 
+$brand-background: #7d7569;
+$brand-light-1: hsl(0,0%,75%);
+$brand-feature-1: #ffce4b;
+
 // To enable support for browsers that do not support @media queries,
 // (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
 // Create a separate stylesheet served exclusively to these browsers,

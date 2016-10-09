@@ -1,12 +1,14 @@
-$brand-background: hsl(0,0%,28%);
+$brand-background: #6e6e6e;
 $brand-light-1: hsl(0,0%,75%);
-$brand-feature-1: hsl(188,89%,44%);
+// $brand-feature-1: hsl(188,89%,44%);
+$brand-feature-1: rgb(255,252,0);
 
 .nav {
   border-top: 4px solid $brand-feature-1;
+  border-bottom: 4px solid $brand-feature-1;
   background-color: $brand-background;
   color: #ffffff;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   position: relative;
   top: -25px;
   display: flex;
@@ -23,7 +25,7 @@ $brand-feature-1: hsl(188,89%,44%);
 
 .header-highlight {
   color: $brand-feature-1;
-  padding-left: 1rem;
+  // padding-left: 1rem;
 }
 
 .links-nav__item {
@@ -37,7 +39,8 @@ $brand-feature-1: hsl(188,89%,44%);
 .nav h2 {
   display:inline-block;
   font-size: 4vmin;
+  letter-spacing: 0.3vmin;
 }
 .nav * {
-  margin: 1vmin;
+  margin: 2vmin;
 }

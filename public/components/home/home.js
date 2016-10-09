@@ -30,18 +30,29 @@ var WILDLIFE = [
 
 
 var wildlifeData = require( "../../data.json" );
+console.log(wildlifeData)
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      selectedCountryAnimals: [],
       countries: this.extractCountriesFromWildlifeJSON()
     }
   }
 
   extractCountriesFromWildlifeJSON() {
     return Object.keys(wildlifeData);
+  }
+
+  onSuggestionSelected = (e, { suggestion }) => {
+    console.log('🐍')
+    console.log(suggestion)
+    console.log(wildlifeData[suggestion]);
+    this.setState({
+      selectedCountryAnimals: wildlifeData[suggestion]
+    });
   }
 
   render() {
@@ -51,15 +62,16 @@ export default class Home extends React.Component {
           <h3>Destination:</h3>
           <CountrySelect
             countries={this.state.countries}
+            onSuggestionSelected={this.onSuggestionSelected}
           />
         </div>
         <div className="infoCard-wrapper">
-          {WILDLIFE.map(organism =>
+          {Object.keys(this.state.selectedCountryAnimals).map(key =>
             <InfoCard
               description={organism.description}
               name={organism.name}
               conservation_status={organism.conservation_status}
-              animal_image={organism .animal_image}
+              animal_image={organism.animal_image}
               product_image={organism.product_image}
               />
           )}

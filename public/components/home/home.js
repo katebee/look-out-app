@@ -5,6 +5,7 @@ import CountrySelect from '../countrySelect/countrySelect';
 import InfoCard from '../infoCard/infoCard';
 
 var wildlifeData = require( "../../data.json" );
+var csText = require( "../../code-to-text.json" );
 var animalConservationStatus = require("../../animals_with_status.json");
 
 var country = wildlifeData.Namibia;
@@ -68,7 +69,7 @@ export default class Home extends React.Component {
             <InfoCard
               description={animal.description}
               name={animal.name}
-              conservation_status={animal.cons}
+              conservation_status={csText[animal.cons]}
               animal_image={'../../assets/ok/' + animal.img}
               product_image={animal.product_image}
               />
